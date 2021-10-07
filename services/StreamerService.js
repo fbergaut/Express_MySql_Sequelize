@@ -19,6 +19,7 @@ class StreamerService {
 
     async create(data) {
         if (data.tags) data.tags = data.tags.join(",");
+        console.log(data);
         return this.streamerModel.create(data);
     }
 
