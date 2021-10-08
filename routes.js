@@ -15,7 +15,7 @@ const sequelize = new Sequelize("streamers", "root", "Nopainnogain21*", {
 
 const StreamerModel = require("./models/StreamerModel");
 const StreamerModelInstance = StreamerModel(sequelize);
-sequelize.sync({ force: true });
+sequelize.sync();
 
 const StreamerController = require("./controllers/StreamerController");
 const StreamerService = require("./services/StreamerService");
